@@ -49,7 +49,6 @@ This is a repo to help you practice diffing!
 
 Fill in what each of the elements of the diff mean (if you are not sure just guess!):
 
-
 **①** 
 Shows this is a diff in git format. It is followed by the file names being compared. The `a/` and `b/` 'folders' are like virtual folders that usually represent different versions with the newer version being b/ and the older version being a/.
 
@@ -63,13 +62,13 @@ The symbol associated with each file. Indicates which file is doing the insertin
 This is a section header. It tells the line number from each file that is being compared (the plus and minus are the originator indicator not negative and positive numbers!!!)
 
 **⑤**:
-The words "fork this repo" I hope you have a better answer than me!
+Line common to both files therefore no symbol prefix. Used to give context to file differences
 
 **⑥**:
-In this example, one line is replaced and 3 additional lines are added in the new version
+Differences in lines prefixed with symbols for each file.  In this case the second file has modified a line from the first file and has also added three further lines.
 
 **⑦**:
-In this case there is a common whitespace in both files bollowed by a change in one line (notice that only one word changed, but the diff does not indicate this). Notice also that this is redundant given the next line!
+Differences in lines prefixed with symbols to indicate which file is which.  In this case the change is the removal of the full stops in carefully.
 
 Notice that the diff above only showed different **lines** in the file. Including whitespaces. We can also highlight changes at the word level with the --word-diff option:
 
